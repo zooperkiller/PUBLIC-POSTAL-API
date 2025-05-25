@@ -1,0 +1,16 @@
+.div-1{
+    border: 1px solid red;
+}
+
+.div-center {
+    border: 1px solid green;
+
+}
+
+.btn-submit{
+    width: auto;
+    height: 42px;
+    color: black;
+    background-color: #ffdd00;
+    
+}
