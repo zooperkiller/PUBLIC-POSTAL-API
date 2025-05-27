@@ -1,5 +1,6 @@
 <template>
   <section class="form-section">
+    <h1>ENTER INDIAN PINCODE</h1>
     <lightning-input
       type="text"
       label="Enter Pincode"
@@ -21,4 +22,20 @@
       ></lightning-button>
     </template>
   </section>
+
+  <template if:true={openSection}>
+    <div class="tiles-container">
+      <template for:each={result.PostOffice} for:item="office">
+        <div key={office.Name} class="tile">
+          <p><strong>{office.Name}</strong></p>
+          <p>{office.BranchType} | {office.DeliveryStatus}</p>
+          <p>{office.Circle}</p>
+          <p>{office.District}, {office.State}</p>
+          <p>{office.Country}</p>
+        </div>
+      </template>
+    </div>
+    </template>
+    
+    
 </template>

@@ -1,15 +1,50 @@
 .form-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #F8F4F0;
 }
 
 .input-box {
-  width: 300px;
+  width: 50%;
   margin-bottom: 1rem;
 }
 
 .submit-btn {
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat';
+  color: black;
+
+}
+
+h1 {
+     
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+
+}
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.tile {
+  background-color: #FAFAFA;
+  border: 1px solid #E0E0E0;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  width: 250px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.tile:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
