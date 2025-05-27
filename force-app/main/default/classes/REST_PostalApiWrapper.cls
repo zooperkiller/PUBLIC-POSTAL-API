@@ -1,20 +1,21 @@
 public class REST_PostalApiWrapper {
 
-	public String Message;	    //Number of Post office(s) found: 10
-	public String Status;	    //Success
-	public List<PostOffice> PostOffice;
+	@AuraEnabled public String Message;
+    @AuraEnabled public String Status;
+    @AuraEnabled public List<PostOffice> PostOffice;
+
 	class PostOffice {
-		public String Name;	    //Alanda
-		public String Description;	    //
-		public String BranchType;	    //Branch Post Office
-		public String DeliveryStatus;	    //Delivery
-		public String Taluk;	    //Rajgangpur
-		public String Circle;	    //Rajgangpur
-		public String District;	    //Sundergarh
-		public String Division;	    //Sundargarh
-		public String Region;	    //Sambalpur
-		public String State;	    //Odisha
-		public String Country;	    //India
+		 @AuraEnabled public String Name;
+        @AuraEnabled public String Description;
+        @AuraEnabled public String BranchType;
+        @AuraEnabled public String DeliveryStatus;
+        @AuraEnabled public String Taluk;
+        @AuraEnabled public String Circle;
+        @AuraEnabled public String District;
+        @AuraEnabled public String Division;
+        @AuraEnabled public String Region;
+        @AuraEnabled public String State;
+        @AuraEnabled public String Country;
 	}
 
 
