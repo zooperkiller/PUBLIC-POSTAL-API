@@ -1,10 +1,24 @@
 <template>
-    <h1>INDIAN POSTAL PINCODE DETAILS</h1>
-    <div class="div-1">
-        <div class="div-center">
+  <section class="form-section">
+    <lightning-input
+      type="text"
+      label="Enter Pincode"
+      value={pincode}
+      onchange={handleInputChange}
+      max-length="6"
+      message-when-too-long="Pincode must be 6 digits"
+      pattern="[0-9]{6}"
+      class="input-box"
+      placeholder="6-digit number"
+    ></lightning-input>
 
-            <lightning-input label="Enter Indian Pincode" required min-length="6" max-length="6" placeholder="Enter 6 digit indian pincode....."></lightning-input>
-            <button class="btn-submit">Submit</button>
-        </div>
-    </div>
+    <template if:true={isValid}>
+      <lightning-button
+        label="Submit"
+        onclick={handleSubmit}
+        variant="brand"
+        class="submit-btn"
+      ></lightning-button>
+    </template>
+  </section>
 </template>

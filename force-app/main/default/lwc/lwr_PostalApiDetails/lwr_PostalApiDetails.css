@@ -1,16 +1,15 @@
-.div-1{
-    border: 1px solid red;
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.div-center {
-    border: 1px solid green;
-
+.input-box {
+  width: 300px;
+  margin-bottom: 1rem;
 }
 
-.btn-submit{
-    width: auto;
-    height: 42px;
-    color: black;
-    background-color: #ffdd00;
-    
+.submit-btn {
+  margin-top: 0.5rem;
 }
